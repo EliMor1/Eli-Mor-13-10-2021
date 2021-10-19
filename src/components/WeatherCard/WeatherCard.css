@@ -1,0 +1,24 @@
+.cardstyle{
+    display:block;
+    transition: transform 0.5s;
+}
+
+.cardstyle:hover{
+    -ms-transform: scale(2);
+    transform:scale(1.2);
+}
+
+.Title{
+    text-align:center;
+    margin-top:1%;
+    width:16.5vh;
+    font-size:1.5vw;
+    color:rgb(107, 107, 107);
+}
+
+.Text{
+    text-align:center;
+    margin-top:1%;
+    width:16.5vh;
+    color:rgb(107, 107, 107);
+}

@@ -1,0 +1,36 @@
+input{
+    width:20%;
+    border-radius:50px;
+    font-weight:bold;
+    text-align:center;
+    box-shadow:0px 0px 15px 10px rgba(0,0,0,0.1);
+    border-color:rgba(5, 250, 144, 0.7);
+}
+
+.Card{
+    margin-left:15%;
+    margin-top:1.5%;
+    width: 70vw;
+    height:80vh;
+    background-color:transparent;
+    color:black;
+    border-image-slice:1;
+    border-width:1px;
+    border-image-source:linear-gradient(to bottom, rgba(5, 250, 144, 1) 0%, rgba(13, 202, 240, 1) 100% );
+    box-shadow:0px 0px 15px 10px rgba(0,0,0,0.1);
+}
+
+.Title{
+    text-align:center;
+    font-size:35px;
+    height:20%;
+    color:rgb(107, 107, 107);
+}
+
+.Text{
+    text-align:center;
+    font-size:1.5vw;
+    font-style:bold;
+    height:25%;
+    color:rgb(107, 107, 107);
+}
