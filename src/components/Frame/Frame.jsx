@@ -56,7 +56,7 @@ const Frame = (props) => {
                 handleWeatherRequest(res.data[0].Key);
             }
         }catch(error){
-            //console.log(error);
+            console.log(error);
             setErrorHandle(true);
         }
     }
