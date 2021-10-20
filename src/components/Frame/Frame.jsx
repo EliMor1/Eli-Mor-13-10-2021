@@ -47,7 +47,7 @@ const Frame = (props) => {
     }
 
     const handleLocationKeyRequest = async (city) => {
-        const baseUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+        const baseUrl = 'https://dataservice.accuweather.com/locations/v1/cities/search';
         const query = `?apikey=L9SRkt3LCyG0Z3hPV3JxPSbhUkKh1p8X&q=${city}`
         try{
             const res = await axios.get(baseUrl + query);
@@ -63,7 +63,7 @@ const Frame = (props) => {
 
     const handleWeatherRequest = async (locationKey) =>{
         const apiKey = '?apikey=L9SRkt3LCyG0Z3hPV3JxPSbhUkKh1p8X';
-        const baseUrl = 'http://dataservice.accuweather.com/currentconditions/v1/';
+        const baseUrl = 'https://dataservice.accuweather.com/currentconditions/v1/';
         const res = await axios.get(baseUrl + locationKey + apiKey);
         setWeatherTextData(res.data[0].WeatherText)
         setTemp(res.data[0].Temperature.Metric.Value); 
@@ -71,7 +71,7 @@ const Frame = (props) => {
 
     const handleForecastRequest = async (locationKey) =>{
         const apiKey = '?apikey=L9SRkt3LCyG0Z3hPV3JxPSbhUkKh1p8X';
-        const baseUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+        const baseUrl = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
         const res = await axios.get(baseUrl + locationKey + apiKey);
         setDailyForecasts(res.data.DailyForecasts);
         setHeadlineText(res.data.Headline.Text);
